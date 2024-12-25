@@ -1,0 +1,17 @@
+[remap]
+
+importer="com.timothyqiu.gdfxr.importer"
+type="AudioStreamWAV"
+uid="uid://1kxnk6ec57ti"
+path="res://.godot/imported/bass.sfxr-2802b84f0faa34f442e96f8fdac676ae.sample"
+
+[deps]
+
+source_file="res://bass.sfxr"
+dest_files=["res://.godot/imported/bass.sfxr-2802b84f0faa34f442e96f8fdac676ae.sample"]
+
+[params]
+
+loop=false
+bit_depth=0
+sample_rate=0

@@ -1,62 +1,74 @@
-[gd_scene load_steps=2 format=3 uid="uid://svcisnb6lnj"]
+[gd_scene load_steps=5 format=3 uid="uid://svcisnb6lnj"]
 
 [ext_resource type="PackedScene" uid="uid://bl21wtvdw4q8w" path="res://audio_collider.tscn" id="1_8fwnu"]
+[ext_resource type="Script" path="res://play_collider.gd" id="1_senwc"]
+[ext_resource type="AudioStream" uid="uid://1kxnk6ec57ti" path="res://bass.sfxr" id="2_csvum"]
+[ext_resource type="AudioStream" uid="uid://4lcb2vjmjj1e" path="res://snare.sfxr" id="3_kbgdn"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 ignore_rotation = false
 
-[node name="Center" type="Node2D" parent="."]
-
-[node name="Area2D" type="Area2D" parent="Center"]
+[node name="PlayCollider" type="Area2D" parent="."]
 collision_layer = 16
 collision_mask = 0
+script = ExtResource("1_senwc")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Center/Area2D"]
-polygon = PackedVector2Array(0, 0, -24, 320, 24, 320)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="PlayCollider"]
+polygon = PackedVector2Array(-2, 0, -2, 320, 2, 320, 2, 0)
+
+[node name="Line2D" type="Line2D" parent="PlayCollider"]
 
 [node name="AudioCollider" parent="." instance=ExtResource("1_8fwnu")]
-rotation = 8437.88
+rotation = 10162.2
+sample = ExtResource("2_csvum")
 length = 32.0
 speed = 2.0
+length_determines_pitch = false
 
 [node name="AudioCollider2" parent="." instance=ExtResource("1_8fwnu")]
-rotation = 8437.88
+rotation = 10162.2
+sample = ExtResource("3_kbgdn")
 length = 64.0
 speed = 2.0
+length_determines_pitch = false
 
 [node name="AudioCollider3" parent="." instance=ExtResource("1_8fwnu")]
-rotation = 8437.88
+rotation = 10162.2
 length = 96.0
 speed = 2.0
 
 [node name="AudioCollider4" parent="." instance=ExtResource("1_8fwnu")]
-rotation = 8437.88
+rotation = 10162.2
+sample = ExtResource("3_kbgdn")
 length = 128.0
 speed = 2.0
+length_determines_pitch = false
 
 [node name="AudioCollider5" parent="." instance=ExtResource("1_8fwnu")]
-rotation = 8437.88
+rotation = 10162.2
 length = 160.0
 speed = 2.0
 
 [node name="AudioCollider6" parent="." instance=ExtResource("1_8fwnu")]
-rotation = 8437.88
+rotation = 10162.2
 length = 192.0
 speed = 2.0
 
 [node name="AudioCollider7" parent="." instance=ExtResource("1_8fwnu")]
-rotation = 8437.88
+rotation = 10162.2
 length = 224.0
 speed = 2.0
 
 [node name="AudioCollider8" parent="." instance=ExtResource("1_8fwnu")]
-rotation = 8437.88
+rotation = 10162.2
+sample = ExtResource("3_kbgdn")
 length = 256.0
 speed = 2.0
+length_determines_pitch = false
 
 [node name="AudioCollider9" parent="." instance=ExtResource("1_8fwnu")]
-rotation = 8437.88
+rotation = 10162.2
 length = 288.0
 speed = 2.0
