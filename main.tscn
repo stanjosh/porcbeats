@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3 uid="uid://svcisnb6lnj"]
+
+[ext_resource type="PackedScene" uid="uid://bl21wtvdw4q8w" path="res://audio_collider.tscn" id="1_8fwnu"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+ignore_rotation = false
+
+[node name="Center" type="Node2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Center"]
+collision_layer = 16
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Center/Area2D"]
+polygon = PackedVector2Array(0, 0, -24, 320, 24, 320)
+
+[node name="AudioCollider" parent="." instance=ExtResource("1_8fwnu")]
+rotation = 8437.88
+length = 32.0
+speed = 2.0
+
+[node name="AudioCollider2" parent="." instance=ExtResource("1_8fwnu")]
+rotation = 8437.88
+length = 64.0
+speed = 2.0
+
+[node name="AudioCollider3" parent="." instance=ExtResource("1_8fwnu")]
+rotation = 8437.88
+length = 96.0
+speed = 2.0
+
+[node name="AudioCollider4" parent="." instance=ExtResource("1_8fwnu")]
+rotation = 8437.88
+length = 128.0
+speed = 2.0
+
+[node name="AudioCollider5" parent="." instance=ExtResource("1_8fwnu")]
+rotation = 8437.88
+length = 160.0
+speed = 2.0
+
+[node name="AudioCollider6" parent="." instance=ExtResource("1_8fwnu")]
+rotation = 8437.88
+length = 192.0
+speed = 2.0
+
+[node name="AudioCollider7" parent="." instance=ExtResource("1_8fwnu")]
+rotation = 8437.88
+length = 224.0
+speed = 2.0
+
+[node name="AudioCollider8" parent="." instance=ExtResource("1_8fwnu")]
+rotation = 8437.88
+length = 256.0
+speed = 2.0
+
+[node name="AudioCollider9" parent="." instance=ExtResource("1_8fwnu")]
+rotation = 8437.88
+length = 288.0
+speed = 2.0
